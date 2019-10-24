@@ -8,14 +8,12 @@ import com.airbnb.lottie.LottieAnimationView;
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
 
-    private LottieAnimationView lottieView;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        lottieView = findViewById(R.id.lottie_view);
+        LottieAnimationView lottieView = findViewById(R.id.lottie_view);
         lottieView.setAnimation("genius-avatar.json");
         lottieView.loop(true);
         lottieView.playAnimation();
